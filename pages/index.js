@@ -1,65 +1,87 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div>
+      <header>
+        <span>logo</span>
+        <nav>
+          <a href=''>link 1</a>
+          <a href=''>link 2</a>
+        </nav>
+      </header>
+      <div className='hero'>
+        <h1> Este será el titulo</h1>
+        <p className='subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla diam eget vestibulum vestibulum.</p>
+        <form>
+          <input />
+          <button>registrarme</button>
+        </form>
+      </div>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      {/* // problema de mercado */}
+      <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae iaculis sapien. Maecenas quis nisl id arcu sagittis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+      </section>
+      {/* // nunestra diferencia */}
+      <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae iaculis sapien. Maecenas quis nisl id arcu sagittis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+      </section>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+      {/* // nuestros valores */}
+      <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae iaculis sapien. Maecenas quis nisl id arcu sagittis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+      </section>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+    <style jsx>{`
+      html, body {
+        margin: 0;
+        box-sizing: border-box;
+      }
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+      header {
+        display: flex;
+        justify-content: space-between;
+        min-height: 50px;
+        align-items: center;
+      }
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+      }
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+      h1 {
+        font-size: 2.25rem;
+      }
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      .subtitle {
+        font-size: 1.5rem;
+        line-height: 1.5;
+      }
+
+
+      form {
+        display: flex;
+      }
+
+      input {
+        min-height: 40px;
+        flex: 1;
+      }
+
+      section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+
+      section p {
+        line-height: 1.25;
+        font-size: 1.25rem;
+      }
+    `}</style>
     </div>
   )
 }
