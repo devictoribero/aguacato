@@ -43,7 +43,7 @@ export default function Home() {
       header {
         display: flex;
         justify-content: space-between;
-        min-height: 75px;
+        min-height: 100px;
         align-items: center;
         padding-left: 1rem;
         padding-right: 1rem;

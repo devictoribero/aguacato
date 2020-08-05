@@ -1,44 +1,50 @@
 export function RegisterEmailForm() {
   return (
-    <form>
-      <label htmlFor='email_signup'>Entérate de más</label>
-      <div>
-        <input
-          id='email_signup'
-          name='email_signup'
-          type='email'
-          placeholder='tucorreo@ejemplo.com'
-          required />
-        <button>Saber más</button>
-      </div>
+    <form aria-label='Formulario para saber más ifnormación'>
+      <input
+        id='email_signup'
+        name='email_signup'
+        type='email'
+        placeholder='tucorreo@ejemplo.com'
+        required />
+      <button>Saber más</button>
 
       <style jsx>{`
-        div {
+        form {
+          position: relative;
+          padding-right: 135px;
+          min-height: 75px;
+          border: 2px solid #eaeaea;
+          border-radius: 5px;
           display: flex;
-          margin-top: 0.5rem;
         }
 
         input, button {
-          min-height: 60px;
           border: none;
-          border-radius: 5px;
           padding: 0.5rem 1rem;
           box-sizing: border-box;
         }
 
   
         input {
-          font-size: 1rem;
+          font-size: 1.15rem;
           border: none;
-          background-color: #f2f2f2;
           flex: 1;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+          min-height: 60px;
         }
         
         button {
           font-size: 1rem;
           background-color: #27ae60;
           color: white;
-          font-weight: 600;
+          font-weight: 500;
+          border-radius: 5px;
+          position: absolute;
+          right: 0.75rem;
+          top: 0.75rem;
+          bottom: 0.75rem;
         }
       `}</style>
     </form>
