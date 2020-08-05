@@ -1,20 +1,17 @@
+import {Container} from 'components/Container'
+import {Logo} from 'components/Logo'
+import {RegisterEmailForm} from 'components/RegisterEmailForm'
+
 export default function Home() {
   return (
-    <div>
+    <Container>
       <header>
-        <span>logo</span>
-        <nav>
-          <a href=''>link 1</a>
-          <a href=''>link 2</a>
-        </nav>
+        <Logo />
       </header>
       <div className='hero'>
-        <h1> Este será el titulo</h1>
-        <p className='subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla diam eget vestibulum vestibulum.</p>
-        <form>
-          <input />
-          <button>registrarme</button>
-        </form>
+        <h1>Augmenta las ventas online de tu restaurante</h1>
+        <p className='subtitle'>Más flexibilidad, menos comisiones y un servicio pensado pensado para ti.</p>
+        <RegisterEmailForm/>
       </div>
 
       {/* // problema de mercado */}
@@ -31,17 +28,25 @@ export default function Home() {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae iaculis sapien. Maecenas quis nisl id arcu sagittis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
       </section>
 
-    <style jsx>{`
+    <style jsx global>{`
       html, body {
         margin: 0;
         box-sizing: border-box;
       }
+      
+      * {
+        font-family: 'Roboto', sans-serif;
+      }
+    `}</style>
 
+    <style jsx>{`
       header {
         display: flex;
         justify-content: space-between;
-        min-height: 50px;
+        min-height: 75px;
         align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
       }
 
       a {
@@ -51,23 +56,30 @@ export default function Home() {
         padding: 0.5rem 1rem;
       }
 
+      .hero {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        min-height: 70vh;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
       h1 {
         font-size: 2.25rem;
+        line-height: 1.35;
+        color: #1a1a1a;
+        letter-spacing: -1px;
+        margin-top: 0;
+        margin-bottom: 1rem;
       }
 
       .subtitle {
         font-size: 1.5rem;
         line-height: 1.5;
-      }
-
-
-      form {
-        display: flex;
-      }
-
-      input {
-        min-height: 40px;
-        flex: 1;
+        color: #393939;
+        letter-spacing: 0.2px;
+        margin-top: 0;
+        margin-bottom: 2rem;
       }
 
       section {
@@ -82,6 +94,6 @@ export default function Home() {
         font-size: 1.25rem;
       }
     `}</style>
-    </div>
+    </Container>
   )
 }
