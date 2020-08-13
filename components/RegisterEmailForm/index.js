@@ -17,6 +17,8 @@ export function RegisterEmailForm() {
           border: 2px solid #eaeaea;
           border-radius: 5px;
           display: flex;
+          width: 100%;
+          box-sizing: border-box;
         }
 
         input, button {
@@ -25,7 +27,6 @@ export function RegisterEmailForm() {
           box-sizing: border-box;
         }
 
-  
         input {
           font-size: 1.15rem;
           border: none;
@@ -46,6 +47,8 @@ export function RegisterEmailForm() {
           top: 0.75rem;
           bottom: 0.75rem;
         }
+
+        @media scre
       `}</style>
     </form>
   )

@@ -10,8 +10,10 @@ export default function Home() {
       </header>
       <div className='hero'>
         <h1>Augmenta las ventas online de tu restaurante</h1>
-        <p className='subtitle'>Más flexibilidad, menos comisiones y un servicio pensado pensado para ti.</p>
-        <RegisterEmailForm/>
+        <p className='hero-subtitle'>Más flexibilidad, menos comisiones y un servicio pensado pensado para ti.</p>
+        <div className='hero-emailAdquisition'>
+          <RegisterEmailForm/>
+        </div>
       </div>
 
       {/* // problema de mercado */}
@@ -65,15 +67,15 @@ export default function Home() {
       }
 
       h1 {
-        font-size: 2.25rem;
-        line-height: 1.35;
+        font-size: 3rem;
+        line-height: 1.15;
         color: #1a1a1a;
         letter-spacing: -1px;
         margin-top: 0;
         margin-bottom: 1rem;
       }
 
-      .subtitle {
+      .hero-subtitle {
         font-size: 1.5rem;
         line-height: 1.5;
         color: #393939;
@@ -92,6 +94,34 @@ export default function Home() {
       section p {
         line-height: 1.25;
         font-size: 1.25rem;
+      }
+
+      @media screen and (min-width: 768px) {
+        .hero {
+          max-width: 750px;
+          min-height: 40vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        h1 {
+          font-size: 3.5rem;
+        }
+
+        .hero-subtitle {
+          font-size: 1.75rem;
+        }
+
+        .hero-emailAdquisition {
+          width: 450px;
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        .hero {
+          min-height: 60vh;
+        }
       }
     `}</style>
     </Container>
