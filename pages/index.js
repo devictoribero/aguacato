@@ -115,7 +115,7 @@ function HomeHeader(){
       }
 
       h1 {
-        font-size: 2.75rem;
+        font-size: 2.25rem;
         color: #051441;
         line-height: 1.15;
         font-weight: 600;
