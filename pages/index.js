@@ -248,8 +248,8 @@ function Letter() {
 
           // animation
           opacity: 0;
-          animation: fadein 0.75s, comeup 1s;
-          animation-delay: 0.75s;
+          animation: fadein 0.5s ease-in-out, comeup 0.45s ease-in-out;
+          animation-delay: 1s;
           animation-fill-mode: forwards;
         }
 
@@ -305,7 +305,7 @@ function Letter() {
   
         @keyframes comeup {
           from {
-            transform: translateY(20px);
+            transform: translateY(75px);
           }
           to {
             transform: translateY(0);
