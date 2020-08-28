@@ -7,48 +7,83 @@ export function RegisterEmailForm() {
         type='email'
         placeholder='tucorreo@ejemplo.com'
         required />
-      <button>Saber más</button>
+      <button>Me interesa!</button>
 
       <style jsx>{`
         form {
-          position: relative;
-          padding-right: 135px;
-          min-height: 75px;
-          border: 2px solid #eaeaea;
           border-radius: 5px;
-          display: flex;
           width: 100%;
-          box-sizing: border-box;
+          box-shadow: 0 5px 25px -10px rgba(5, 7, 119, 0.15);
         }
 
         input, button {
           border: none;
-          padding: 0.5rem 1rem;
           box-sizing: border-box;
         }
 
         input {
+          border-radius: 5px;
+          color: #4f5977;
+          display: block;
           font-size: 1.15rem;
-          border: none;
-          flex: 1;
-          border-top-left-radius: 5px;
-          border-bottom-left-radius: 5px;
-          min-height: 60px;
+          font-weight: bold;
+          min-height: 65px;
+          padding: 0.5rem 1.25rem;
+          width: 100%;
+          text-align: center;
+        }
+
+        input::placeholder {
+          color: #677294;
+          font-weight: 500;
+          font-size: 1.15rem;
         }
         
         button {
-          font-size: 1rem;
-          background-color: #27ae60;
+          font-size: 1.25rem;
+          background-color: #409fdd;
           color: white;
           font-weight: 500;
           border-radius: 5px;
-          position: absolute;
-          right: 0.75rem;
-          top: 0.75rem;
-          bottom: 0.75rem;
+          box-shadow: 0 7px 11px 0px rgba(5,7,119,0.15);
+          padding: 0.5rem 1rem;
+          cursor: pointer;
+          width: 100%;
+          margin-top: 0.5rem;
+          min-height: 60px;
+          transition: background-color ease-in-out 0.15s;
         }
 
-        @media scre
+        button:hover {
+          background-color: #2980b9;
+        }
+
+        @media screen and (min-width: 768px) {
+          form {
+            position: relative;
+          }
+  
+          input {
+            min-height: 75px;
+            padding: 0.5rem 125px 0.5rem 2rem;
+            text-align: left;
+            font-size: 1.25rem;
+          }
+
+          input::placeholder {
+            font-size: 1.25rem;
+          }
+          
+          button {
+            position: absolute;
+            right: 0.65rem;
+            top: 0.65rem;
+            bottom: 0.65rem;
+            min-height: 50px;
+            width: auto;
+            margin-top: 0;
+          }
+        }
       `}</style>
     </form>
   )

@@ -19,6 +19,7 @@ export function Logo() {
         span {
           font-weight: 900;
           font-size: 1.25rem;
+          color: #051441;
         }
       `}</style>
     </div>
