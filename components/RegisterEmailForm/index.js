@@ -84,6 +84,24 @@ export function RegisterEmailForm() {
             margin-top: 0;
           }
         }
+
+        @keyframes fadein {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+  
+        @keyframes comedown {
+          from {
+            transform: translateY(-5px);
+          }
+          to {
+            transform: translateY(0);
+          }
+        }
       `}</style>
     </form>
   )

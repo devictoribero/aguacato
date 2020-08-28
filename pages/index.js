@@ -62,6 +62,26 @@ function TopBar() {
           top: 0;
           left: 0;
           right: 0;
+
+          animation: fadein 0.75s ease-in-out, comeleft 0.5s ease-in-out;
+        }
+
+        @keyframes fadein {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        @keyframes comeleft {
+          from {
+            transform: translateX(-20px);
+          }
+          to {
+            transform: translateX(0);
+          }
         }
       `}</style>
     </header>
@@ -87,6 +107,13 @@ function HomeHeader(){
         min-height: 70vh;
       }
 
+      .hero-info {
+        opacity: 0;
+        animation: fadein 2s, comedown 0.75s;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+      }
+
       h1 {
         font-size: 2.75rem;
         color: #051441;
@@ -109,6 +136,7 @@ function HomeHeader(){
         margin-bottom: 2rem;
         font-weight: 300;
         text-align: center;
+        
       }
 
       @media screen and (max-width: 350px) {
@@ -174,6 +202,24 @@ function HomeHeader(){
           width: 500px;
         }
       }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes comedown {
+        from {
+          transform: translateY(-20px);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
     `}</style>
     </div>
   )
@@ -199,6 +245,12 @@ function Letter() {
           padding: 2rem 1.5rem;
           border-radius: 10px;
           box-shadow: 0 6px 16px -3px rgba(5,7,119,0.05);
+
+          // animation
+          opacity: 0;
+          animation: fadein 0.75s, comeup 1s;
+          animation-delay: 0.75s;
+          animation-fill-mode: forwards;
         }
 
         .bold {
@@ -239,6 +291,24 @@ function Letter() {
         @media screen and (min-width: 992px) {
           section {
             margin-top: -5rem;
+          }
+        }
+
+        @keyframes fadein {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+  
+        @keyframes comeup {
+          from {
+            transform: translateY(20px);
+          }
+          to {
+            transform: translateY(0);
           }
         }
       `}</style>
