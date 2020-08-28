@@ -26,7 +26,7 @@ export function RegisterEmailForm() {
           color: #4f5977;
           display: block;
           font-size: 1.15rem;
-          font-weight: bold;
+          font-weight: 400;
           min-height: 65px;
           padding: 0.5rem 1.25rem;
           width: 100%;
@@ -35,7 +35,7 @@ export function RegisterEmailForm() {
 
         input::placeholder {
           color: #677294;
-          font-weight: 500;
+          font-weight: 400;
           font-size: 1.15rem;
         }
         
