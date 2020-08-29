@@ -7,7 +7,7 @@ export function RegisterEmailForm() {
         type='email'
         placeholder='tucorreo@ejemplo.com'
         required />
-      <button>Me interesa!</button>
+      <button>Cuéntame más!</button>
 
       <style jsx>{`
         form {

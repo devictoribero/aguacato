@@ -246,7 +246,7 @@ function Letter() {
           background-color: white;
           padding: 2rem 1.5rem;
           border-radius: 10px;
-          box-shadow: 0 6px 16px -3px rgba(5,7,119,0.05);
+          box-shadow: 0 6px 16px -3px rgba(5,7,119,0.05), 5px 10px 20px 0px rgba(5,7,119,0.1);
 
           // animation
           opacity: 0;
