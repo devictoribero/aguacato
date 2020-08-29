@@ -92,8 +92,10 @@ function HomeHeader(){
   return (
     <div className='hero'>
       <div className='grid hero-info'>
-        <h1><span className='highlight'>Haz crecer tu restaurante </span>vendiendo pedidos online</h1>
-        <p>Te ofrecemos un servicio con más flexibilidad, menos comisiones y pensado para ti</p>
+        <h1>Crea tu restaurante online</h1>
+        <p>
+        ¿Te gustan las altas comisiones? A nosotros tampoco. Aguacato lo ha arreglado porque ha pensado en ti. Hemos un servicio para food delivery inclusivo y accesible para tu restaurante. ¡Únete!
+        </p>
         <div className='hero-emailAdquisition'>
           <RegisterEmailForm/>
         </div>
